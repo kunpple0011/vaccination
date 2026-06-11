@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vaccination</title>
     <style>
-        /* 页面整体设定：深蓝黑底色，消除边缘留白 */
+        /* 页面整体设定：深蓝黑底色 */
         body {
             background-color: #050a15; 
             color: #d0d0d0;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            /* 适配中文字体排版 */
+            font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -19,35 +20,35 @@
             padding: 20px;
             box-sizing: border-box;
         }
-        /* 核心内容容器限制宽度，确保在电脑和手机上都好看 */
+        /* 核心内容容器限制宽度 */
         .container {
             max-width: 400px;
             width: 100%;
             text-align: center;
         }
-        /* 封面图设定：宽度铺满容器，加上微微的深色阴影增加立体感 */
+        /* 封面图设定 */
         img {
             width: 100%;
             height: auto;
             box-shadow: 0 10px 30px rgba(0,0,0,0.8);
             margin-bottom: 35px;
         }
-        /* 文案排版：字号克制，行距拉开，冷峻的灰色 */
+        /* 中文文案排版：调整字号、拉开行距和字间距，营造电影字幕感 */
         .description {
-            font-size: 13px;
-            line-height: 2;
-            letter-spacing: 1px;
+            font-size: 14px;
+            line-height: 2.2;
+            letter-spacing: 1.5px;
             margin-bottom: 40px;
-            color: #8a92a3;
+            color: #9ba3b8; /* 偏冷调的高级灰，融入夜色 */
         }
         .description p {
-            margin: 8px 0;
+            margin: 12px 0;
         }
         /* 播放器设定 */
         audio {
             width: 100%;
             outline: none;
-            opacity: 0.8; /* 稍微降低透明度，使其融入暗色背景 */
+            opacity: 0.8; 
         }
     </style>
 </head>
@@ -56,16 +57,20 @@
         <img src="cover.jpg" alt="vaccination">
         
         <div class="description">
-            <p>The rearview mirror is fogging up.</p>
-            <p>Trying to calibrate sanity with the most precise scales.<br>
-               The hands of the clock run out, yet in the end,<br>
-               I can only surrender as the dose diffuses through my bloodstream.</p>
-            <p>This is an inflammation I can neither quit nor cure.</p>
+            <p>并非特意为你而作的歌。</p>
+            
+            <p>在和你聊天的过程中，<br>
+               我又回忆起那个曾经为自我表达而着迷的自己。<br>
+               现在的我很麻木，就算你只是一根火柴，<br>
+               在黑暗里也是最夺目的光，<br>
+               大抵是这个意思，也有点不是。</p>
+               
+            <p>生日快乐，25岁后的第一个生日，真正的成人日🎂</p>
         </div>
 
         <audio controls>
             <source src="vaccination.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
+            您的浏览器不支持音频播放。
         </audio>
     </div>
 </body>
