@@ -9,7 +9,6 @@
         body {
             background-color: #050a15; 
             color: #d0d0d0;
-            /* 适配中文字体排版 */
             font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
             display: flex;
             flex-direction: column;
@@ -17,7 +16,7 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            padding: 20px;
+            padding: 15px; /* 稍微减小了整体页面的内边距 */
             box-sizing: border-box;
         }
         /* 核心内容容器限制宽度 */
@@ -31,18 +30,18 @@
             width: 100%;
             height: auto;
             box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-            margin-bottom: 35px;
+            margin-bottom: 20px; /* 压缩了图文间距 */
         }
-        /* 中文文案排版：调整字号、拉开行距和字间距，营造电影字幕感 */
+        /* 中文文案排版：微调了行高和字间距，使其在手机一屏内显示完全 */
         .description {
             font-size: 14px;
-            line-height: 2.2;
-            letter-spacing: 1.5px;
-            margin-bottom: 40px;
-            color: #9ba3b8; /* 偏冷调的高级灰，融入夜色 */
+            line-height: 1.8; /* 稍微收紧了行高 */
+            letter-spacing: 1px;
+            margin-bottom: 20px; /* 压缩了文字与播放器的间距 */
+            color: #9ba3b8; 
         }
         .description p {
-            margin: 12px 0;
+            margin: 8px 0; /* 压缩了段落之间的空行 */
         }
         /* 播放器设定 */
         audio {
